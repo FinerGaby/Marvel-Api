@@ -3,13 +3,13 @@ import { FetchConsumer } from '../../context/FetchContext';
 import ModalBox from './ModalBox';
 
 //STYLES COMPONENT
-import { Cards, ThumbnailImg, InformationText} from './Styles'
+import { Cards, ThumbnailImg, InformationText} from './Styles';
 
 
 const Card = () => {
 
     //REALIZO STATE COMPONENTE UNICO QUE USARE
-    const [modal, setModal] = useState(false)
+    const [modal, setModal] = useState(false);
 
     return (
         <FetchConsumer>
@@ -19,22 +19,22 @@ const Card = () => {
             const { dataPersonaje, darkMode } = value;
 
             const modalBox = () => { 
-                setModal(true) 
+                setModal(true);
                 }
             
             /**
             * @param {Boolean} Callback ----- Booleano para actualizar el state del context
             */
             const closedModal = (callback) => {
-                console.log(callback)
-                setModal(callback)
+                console.log(callback);
+                setModal(callback);
             }
 
             let CardsComponent;
             if(dataPersonaje) {
                
             const { name, thumbnail } = dataPersonaje;
-            const imagenPreview = thumbnail.path 
+            const imagenPreview = thumbnail.path;
 
             CardsComponent =
                 <Cards onClick={modalBox} darkMode={darkMode}>

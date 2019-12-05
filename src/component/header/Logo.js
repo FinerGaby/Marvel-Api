@@ -1,5 +1,5 @@
-import React from 'react'
-import { LogoImg } from './Styles'
+import React from 'react';
+import { LogoImg } from './Styles';
 
 
 const Logo = () => {
@@ -13,4 +13,4 @@ const Logo = () => {
     )
 }
 
-export default Logo
+export default Logo;

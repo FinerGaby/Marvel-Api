@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import { Modal, InfoModal, InfoModalText, ComicList } from './Styles'
+import { Modal, InfoModal, InfoModalText, ComicList } from './Styles';
 
 
 const ModalBox = ({dataModal, closedModal}) => {

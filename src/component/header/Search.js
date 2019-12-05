@@ -4,19 +4,19 @@ import React, { useState } from 'react';
 import { FetchConsumer } from '../../context/FetchContext';
 
 //STYLES COMPONENT
-import { SearchArticle, SearchForm, Err } from './Styles'
+import { SearchArticle, SearchForm, Err } from './Styles';
 
 const Search = () => {
 
     //REALIZO STATE COMPONENTE UNICO QUE USARE
-    const [ valueSearch, setValueSearch ] = useState('')
+    const [ valueSearch, setValueSearch ] = useState('');
 
     return (
         <FetchConsumer>
             {(value) => {
             
             // OBTENGO LA FUNCTION DE MI CONTEXT
-            const { fetchSearch, error, darkMode } = value
+            const { fetchSearch, error, darkMode } = value;
 
             /**
             * @param {String} e   ----- obtengo los values
@@ -24,7 +24,7 @@ const Search = () => {
             */
             let handleChange
             handleChange = (e) => {
-                setValueSearch(e.target.value)
+                setValueSearch(e.target.value);
             }
 
             /**
@@ -36,10 +36,10 @@ const Search = () => {
                 e.preventDefault();
 
                 // LE MANDO LOS DATOS POR CALLBACK A fetchSearch
-                fetchSearch(valueSearch)
+                fetchSearch(valueSearch);
 
                 // VUELVO AL STATE INICIAL PARA LIMPIAR EL INPUT
-                setValueSearch('')
+                setValueSearch('');
 
             }
 

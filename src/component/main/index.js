@@ -1,8 +1,8 @@
-import React from 'react'
-import Card from './Card'
+import React from 'react';
+import Card from './Card';
 
 //STYLES COMPONENT
-import { Container } from './Styles'
+import { Container } from './Styles';
 
 const Main = () => {
 

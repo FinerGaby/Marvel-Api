@@ -1,6 +1,6 @@
-import React from 'react'
-import Logo from './Logo'
-import Search from './Search'
+import React from 'react';
+import Logo from './Logo';
+import Search from './Search';
 
 import { FetchConsumer } from '../../context/FetchContext';
 
